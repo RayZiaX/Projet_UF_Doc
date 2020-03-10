@@ -1,36 +1,35 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleMain.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/styleMain.css">
-
-    <title>Stephi Place - Accueil</title>
+    <title>Stephi Place-Agence{$AGENCE}</title>
 </head>
 
 <body>
     <header>
         <div class="main">
             <div class="img">
-                <a class="nav-link active" href="#"><img src="./img/logo_maison.png" alt="logo_entreprise"/></a>
+                <a class="nav-link active" href="../index.html"><img src="../img/logo_maison.png" alt="logo_entreprise" /></a>
             </div>
             <div class="contenu">
                 <div class="body">
                     <div class="menus">
                         <ul class="nav nav-pills">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Accueil</a>
+                                <a class="nav-link active" href="../index.html">Accueil</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                                     aria-haspopup="true" aria-expanded="false">Agence</a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="./pages/agence.html">Marseille</a>
-                                    <a class="dropdown-item" href="./pages/agence.html">Aix-en-Provence</a>
-                                    <a class="dropdown-item" href="./pages/agence.html">Marignane</a>
+                                    <a class="dropdown-item" href="#">Marseille</a>
+                                    <a class="dropdown-item" href="#">Aix-en-Provence</a>
+                                    <a class="dropdown-item" href="#">Marignane</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
@@ -47,32 +46,15 @@
                         </ul>
                     </div>
                     <div class="btn-group" role="group" aria-label="Basic example">
-                        <button  class="btn btn-secondary" id="btn_incription" onclick="inscription()">Inscription</button>
-                        <button  class="btn btn-secondary" id="btn_connexion" onclick="connexion()">Se connecter</button>
+                        <button class="btn btn-secondary" id="btn_incription"
+                            onclick="inscription()">Inscription</button>
+                        <button class="btn btn-secondary" id="btn_connexion" onclick="connexion()">Se connecter</button>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <div class="formulaire">
-        <form action="#" method="GET">
-            <div class="entrer">
-                <input type="text" placeholder="budget">
-                <input type="text" placeholder="Lieux">
-            </div>
-            <div class="type">
-                <div class="radio_1">
-                    <input type="radio" name="Apartement" id="Apart">
-                    <label for="Apart">Apartement</label>
-                </div>
-                <div class="radio_2">
-                    <input type="radio" name="Maison" id="Maison">
-                    <label for="Maison">Maison</label>
-                </div>
-                <button type="submit" id="envoie">Rechercher</button>
-            </div>
-        </form>
-    </div>
+
     <script src="./js/bouton.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">

@@ -1,0 +1,14 @@
+
+fieldset > legend{
+    margin: 10px;
+
+}
+
+form label{
+    align-content: flex-start;
+    width: 250px;
+}
+
+form > textarea{
+    margin: 10px 0;
+}

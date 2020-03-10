@@ -9,6 +9,12 @@ header{
     padding:0 5px;
     background-color: transparent;
 }
+
+div.img > a > img{
+    height: 150px;
+    width: 150px;
+}
+
 .body{
    display: flex;
 }
