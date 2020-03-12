@@ -1,47 +1,21 @@
-body{
+html {
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+}
+
+body {
     height: 100vh;
     width: 100vw;
     background-color: rgb(241, 241, 241);
     margin: 0;
 }
-/*début partie header*/
-header{
-    padding:0 5px;
-    background-color: transparent;
-}
-
-div.img > a > img{
-    height: 150px;
-    width: 150px;
-}
-
-.body{
-   display: flex;
-}
-.main{
-   width: 100%;
-   display: flex;
-   margin: 0;
-}
-.contenu{
-   display: flex;
-   flex-direction: column;
-   padding:0 25px;
-   flex:1;
-}
-
-.menus{
-   display: flex;
-   flex: 1;
-   padding-left: 10px;
-
-}
-/* fin partie header */
 /* debut body */
 div.formulaire{
     display: block;
     box-sizing: content-box;
     margin: 5% 25%;
+    margin-top: 15%;
     padding: 10px;
     text-align: center;
     background-color: transparent;
@@ -72,3 +46,26 @@ div.radio_2{
     margin-right: 5%;
 }
 /* fin body */
+/* footer */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.contenu-btn{
+    padding: 10px;
+    justify-content: flex-end;
+    display: flex;
+    width: 100%;
+}
+.contenu-btn a{
+    margin-right: 5px;
+}
+.contenu-footer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.contenu-footer > .copyright{
+    font-size: 0.75rem;
+}

@@ -52,36 +52,46 @@
         </div>
     </header>
     <div class="formulaire">
-        <form action="#" method="POST">
-            <fieldset>
+        <form action="" method="POST" id="myform">
+            <fieldset class="formulaire first">
                 <legend>Stephi Place - Formulaire d'inscription</legend>
-                <label for="identifiant">Votre identifiant: </label><input type="text" name="identifiant"
-                    id="identifiant"><br>
-                <label for="mdp">Votre mot de passe: </label><input type="password" name="mdp" id="mdp"><br>
-                <label for="mdp">confirmer le mot de passe: </label><input type="password" name="confirm_mdp"
+                <label for="identifiant">Votre identifiant<i class="imporant">*</i></label><input type="text"
+                    name="identifiant" id="identifiant"><br>
+                <label for="mdp">Votre mot de passe<i class="imporant">*</i></label><input type="password" name="mdp"
+                    id="mdp"><br>
+                <label for="mdp">confirmer le mot de passe</label><input type="password" name="confirm_mdp"
                     id="confirm_mdp"><br>
-                <label for="Nom">Nom: </label><input type="text" name="Nom" id="Nom" class="Nom" /><br>
-                <label for="prenom">Prenom: </label><input type="text" name="prenom" id="prenom" class="prenom" /><br>
-                <label for="email">Email: </label><input type="email" name="email" id="email" class="email" /><br>
-                <label for="age">votre age: </label><input type="text" name="age" id="age" class="age" /><br>
+                <label for="Nom">Nom<i class="imporant">*</i> </label><input type="text" name="nom" id="nom"
+                    class="nom" /><br>
+                <label for="prenom">Prenom<i class="imporant">*</i></label><input type="text" name="prenom" id="prenom"
+                    class="prenom" /><br>
+                <label for="email">Email<i class="important">*</i></label><input type="email" name="email" id="email"
+                    class="email" /><br>
+                <label for="age">votre age<i class="important">*</i></label><input type="text" name="age" id="age"
+                    class="age" /><br>
+                <label for="civilite">Civilité
+                    <select name="civilite" id="civilite">
+                        <option value="homme">Homme</option>
+                        <option value="femme">Femme</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </label>
             </fieldset>
-            <div class="civilité">
-                <label for="homme">homme </label><input type="radio" name="homme" id="homme" />
-                <label for="femme">femme </label><input type="radio" name="femme" id="femme" />
-                <label for="autre">autre </label><input type="radio" name="autre" id="autre" />
-            </div>
-            <textarea name="description" id="description" cols="30" rows="10"
-                placeholder="descritpion optionel de vous, peut etre modifier plus tard" /></textarea><br>
-            <input type="checkbox" name="condition" id="condition" /> en cochant vous acceptez <a href="#">les
-                conditions d'utilisation du site</a><br>
+            <fieldset class="formulaire second">
+                <textarea name="description" id="description" cols="30" rows="10"
+                    placeholder="descritpion optionel de vous, peut etre modifier plus tard"></textarea><br>
+                <input type="checkbox" name="condition" id="condition" /> en cochant vous acceptez <a href="#">les
+                    conditions d'utilisation du site</a><br>
+                <input type="submit" value="s'inscrire">
 
-            <input type="submit" value="s'inscrire">
+            </fieldset>
         </form>
     </div>
     <footer>
 
     </footer>
-    <script src="./js/bouton.js"></script>
+    <script src="../js/formulaireJs.js"></script>
+    <script src="../js/bouton.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
