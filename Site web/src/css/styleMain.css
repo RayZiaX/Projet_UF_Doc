@@ -6,7 +6,7 @@ html {
 
 body {
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
     background-color: rgb(241, 241, 241);
     margin: 0;
 }
@@ -28,14 +28,44 @@ div.entrer > input{
 }
 div.type{
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         flex: 1 1 20%;
         flex-direction: row;
         flex-wrap: wrap;
+        margin: 0;
 }
-div.type{
-    margin: 0;
-    margin-top: 5%;
+div.type select{
+    margin-left: 10px;
+}
+.formulaire-accueil{
+    display: flex;
+    justify-content: center;
+    flex: 1 1 20%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5% 25%;
+    margin-bottom: 0%;
+    margin-right: 28%;
+}
+.formulaire-review{
+    display: block;
+    box-sizing: content-box;
+    margin: 5% 25%;
+    padding: 10px;
+    text-align: center;
+    background-color: transparent;
+}
+.recherche{
+    display: flex;
+    margin: 2.5% 5%;
+    flex-wrap: wrap;
+}
+.carte{
+    display: flex;
+    margin: 0 10px;
+    padding: 5px;
+    flex-direction: column;
+    width: 17%;
 }
 div.radio_1{
     margin: 0;
@@ -45,6 +75,7 @@ div.radio_2{
     margin: 0;
     margin-right: 5%;
 }
+
 /* fin body */
 /* footer */
 footer{

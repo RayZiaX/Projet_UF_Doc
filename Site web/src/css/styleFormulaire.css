@@ -1,30 +1,9 @@
-body{
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
+.form{
+    margin: 0 35%;
+    justify-content: center;
 }
 
-
-
-fieldset{
-    border: solid black 2px !important; 
-    width: 50%
-}
-fieldset.first{
-    border-bottom: none !important;
-}
-
-
-fieldset > legend{
-    margin: 10px 0;
-    width: auto;
-}
-
-form label{
-    align-content: flex-start;
-    width: 250px;
-}
-
-form > textarea{
-    margin: 10px 0;
+label{
+    display: block;
+    float: left;
 }
